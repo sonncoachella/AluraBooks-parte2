@@ -113,3 +113,25 @@
 .opções__botão {
   display: none;
 }
+
+.container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer {
+  background-image: url("../img/MenuAberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo {
+  background: var(--azul-degrade);
+}
+
+.opções__botão:checked ~ .opções__rotulo > .opções__item {
+  background: var(--azul-degrade);
+  color: var(--branco);
+}
+
+.opções__item {
+  padding: 2em 1em;
+}
+
+.lista-menu__item:hover > .lista-menu__link {
+  -webkit-text-fill-color: var(--preto);
+  text-decoration: none;
+}
